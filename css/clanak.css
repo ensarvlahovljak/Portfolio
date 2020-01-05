@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.clanak {
+    margin: 80px 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clanak p, li {
+    font-size: 20px;
+}
+
+.clanak h1 {
+    margin-top: 50px;
+}
+
+table {
+    width: 700px;
+}
+
+table tr {
+    width: 700px;
+}
+
+table td {
+    width: 350px;
+}
+
+table span {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+iframe {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .clanak {
+        margin: 0;
+    }
+}

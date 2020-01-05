@@ -1,0 +1,56 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#clanci {
+    margin: 100px;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#clanci h1 {
+    text-align: center;
+}
+
+#clanci > .clanci {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.clanci div {
+    width: 50%;
+}
+
+.clanci div img  {
+    width: 100%;
+    height: 300px;
+}
+
+.clanci a {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.clanci a:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+    #clanci > .clanci {
+        flex-direction: column;
+    }
+
+    .clanci > div {
+        width: 100%;
+    }
+}

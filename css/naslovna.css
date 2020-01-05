@@ -1,0 +1,116 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#naslovna {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/back1.png);
+    background-size: 100% 100vh;
+}
+
+#naslovna > h1, #naslovna > a {
+    color: white;
+}
+
+#naslovna > h1 {
+    font-size: 50px;
+    color: black;
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+#naslovna > a {
+    font-size: 30px;
+}
+
+#projekti {
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.projekat {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.projekat img {
+    height: 500px;
+    margin-right: 50px;
+}
+
+.projekat:first-child {
+    margin-bottom: 50px;
+}
+
+a[href="#projekti"]  {
+    text-decoration: none;
+    color: black;
+}
+
+.detalji a {
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid rgb(53, 51, 51);
+    padding: 10px 30px;
+    background-color: #eee;
+}
+
+.detalji a:hover {
+    background-color: aqua;
+    transition: 0.5s;
+    border: 1px solid aqua;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: 200px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    #naslovna {
+        width: 100%;
+    }
+
+    .projekat {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projekat img {
+        margin: auto;
+    }
+
+    .projekat h1 {
+        font-size: 25px;
+    }
+
+    .detalji {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
